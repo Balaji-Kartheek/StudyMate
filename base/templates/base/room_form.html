@@ -1,0 +1,11 @@
+{%extends 'main.html'%}
+
+{%block content%}
+<h1>Room Form</h1>
+<form method="POST" action="">
+    {%csrf_token%}
+    <input type="text" name="name" placeholder="Room Name">
+    <input type="text" name="description" placeholder="Room Description">
+    <input type="submit" value="Submit">
+</form>
+{%endblock%}
